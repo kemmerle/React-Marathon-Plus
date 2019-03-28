@@ -5,7 +5,7 @@ const PlaylistTile = props => {
 
   return(
     <div>
-      <p className={props.displayClass} onClick={props.clickChange}>{props.title}</p>
+      <p onClick={props.clickChange}>{props.title}</p>
     </div>
   )
 }

@@ -11,9 +11,15 @@ class SonglistContainer extends Component {
   }
 
   selectNewSong(songId) {
-    this.setState({
-      selectId: songId
-    })
+    if(this.state.selectId === songId) {
+      this.setState({
+        selectId: null
+      })
+    } else {
+      this.setState({
+        selectId: songId
+      })
+    }
   }
 
   render() {
