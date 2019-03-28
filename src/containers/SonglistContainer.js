@@ -6,7 +6,7 @@ class SonglistContainer extends Component {
     super(props)
     this.state = {
       selectId: null
-    }
+    } 
     this.selectNewSong = this.selectNewSong.bind(this)
   }
 
